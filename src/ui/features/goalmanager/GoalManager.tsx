@@ -49,7 +49,7 @@ export function GoalManager(props: Props) {
       setName(goal.name)
       setIcon(goal.icon ?? null)
     }
-  }, [goal])
+  }, [goal?.name, goal?.icon])
 
   const updateNameOnChange = (
     event: React.ChangeEvent<HTMLInputElement>
